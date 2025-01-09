@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Flashcard App</h1>
+
+    <!-- Add Flashcard Section -->
+    <div id="add-flashcard-section">
+      <h2>Add Flashcard</h2>
+      <input type="text" id="question" placeholder="Enter Question">
+      <input type="text" id="answer" placeholder="Enter Answer">
+      <button id="add-flashcard">Add Flashcard</button>
+    </div>
+
+    <!-- Review Flashcard Section -->
+    <div id="review-flashcard-section" style="display:none;">
+      <h2>Review Flashcards</h2>
+      <p id="question-display"></p>
+      <button id="show-answer">Show Answer</button>
+      <p id="answer-display" style="display:none;"></p>
+      <button id="remembered">Remembered</button>
+      <button id="not-remembered">Not Remembered</button>
+    </div>
+
+    <!-- No Flashcards Message -->
+    <p id="no-cards-message" style="display:none;">No flashcards to review!</p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
